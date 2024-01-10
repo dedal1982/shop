@@ -32,4 +32,13 @@
   font-size: 20px;
 }
 .basket-page__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.basket-page__item {
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  box-sizing: border-box;
 }
