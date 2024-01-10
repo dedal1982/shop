@@ -46,9 +46,7 @@ button {
 .content {
   flex: 1 0 auto;
 }
-.footer {
-  flex: 0 0 auto;
-}
+
 .container {
   max-width: 1200px;
   width: 100%;
@@ -61,7 +59,7 @@ button {
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
-  background: #005bff;
+  background: #1e90ff;
 }
 .header__wrapper {
   max-width: 1200px;
@@ -160,7 +158,7 @@ button {
   width: 100%;
   height: 50px;
   border-radius: 5px;
-  background: #005bff;
+  background: #1e90ff;
   -webkit-box-shadow: inset 0px 1px 10px 0px rgba(255, 255, 255, 0.4),
     0px 3px 3px 0px rgba(0, 0, 0, 0.4);
   display: flex;
@@ -169,7 +167,7 @@ button {
   transition: all 0.3s ease-in-out;
 }
 .shop__item-btn:hover {
-  background: #0f07dc;
+  background: #436f9c;
 }
 .btn-item {
   display: flex;
@@ -182,4 +180,30 @@ button {
 .btn-item img {
   width: 24px;
   height: 24px;
+}
+/*footer*/
+.footer {
+  flex: 0 0 auto;
+  background: #1e90ff;
+}
+.footer__wrapper {
+  margin: 30px auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.ildm {
+  color: azure;
+  display: flex;
+  align-items: center;
+}
+.copyright {
+  color: azure;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.copyright:hover {
+  background: linear-gradient(180deg, #23242d 0%, rgba(35, 36, 45, 0.5) 100%);
+  transition: 0.3s ease-in-out;
 }
