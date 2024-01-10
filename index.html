@@ -25,30 +25,11 @@
         <section class="shop">
           <div class="container">
             <div class="shop__wrapper">
-              <div class="shop__inner">
-                <div class="shop__item">
-                  <a href="">
-                    <div class="shop__item-img">
-                      <img src="./images/optimize.webp" alt="картинка" />
-                    </div>
-                    <div class="shop__item-price">цена: 1500</div>
-                    <div class="shop__item-name">
-                      Умные часы Mibro P5 XPSWP003 Blue RU
-                    </div>
-                  </a>
-                  <button class="shop__item-btn" type="button">
-                    <div class="btn-item">
-                      <img src="./icons/basc.png" alt="корзина" />
-                      В корзину
-                    </div>
-                  </button>
-                </div>
-              </div>
+              <div class="shop__inner elements"></div>
             </div>
           </div>
         </section>
       </main>
-
       <footer class="footer">
         <div class="container">
           <div class="footer__wrapper">
@@ -60,6 +41,25 @@
         </div>
       </footer>
     </div>
+    <template class="template">
+      <div class="shop__item">
+        <a href="">
+          <div class="shop__item-img">
+            <img class="shop__image" src="" alt="картинка" />
+          </div>
+          <div class="shop__item-price"></div>
+          <div class="shop__item-name"></div>
+        </a>
+        <button class="shop__item-btn" type="button">
+          <div class="btn-item">
+            <img src="./icons/basc.png" alt="корзина" />
+            В корзину
+          </div>
+        </button>
+      </div>
+    </template>
+    <script src="./products/products.js"></script>
+    <script src="./products/init.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>
