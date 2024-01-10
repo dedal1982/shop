@@ -20,7 +20,7 @@
   min-width: 20px;
   height: 20px;
   border-radius: 25%;
-  right: -20px;
+  right: -30px;
   top: 0;
   display: flex;
   align-items: center;
@@ -35,10 +35,70 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin-top: 50px;
 }
 .basket-page__item {
   width: 100%;
   display: flex;
+  align-items: center;
+  gap: 100px;
   padding: 20px;
   box-sizing: border-box;
+  -webkit-box-shadow: 1px -1px 15px 9px rgba(227, 243, 255, 1);
+  -moz-box-shadow: 1px -1px 15px 9px rgba(227, 243, 255, 1);
+  box-shadow: 1px -1px 15px 9px rgba(227, 243, 255, 1);
+}
+.basket-page__image {
+  width: 150px;
+  height: 200px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+.basket-page__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.basket-page__text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.basket-page__name {
+}
+.basket-page__color {
+  opacity: 0.7;
+}
+.basket-page__count-item {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.button-plus,
+.button-minus {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 26, 52, 0.4);
+  border-radius: 5px;
+  opacity: 0.5;
+  font-size: 24px;
+}
+
+.button-count {
+  width: 50px;
+  height: 30px;
+  font-size: 14px;
+  line-height: 18px;
+  border-radius: 5px;
+  border: 2px solid #b3bcc5;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.button-count {
+  outline: none;
 }
