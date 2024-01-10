@@ -1,0 +1,35 @@
+.basket-page {
+  width: 100%;
+}
+.basket-page__wrapper {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.basket-page__title {
+  font-weight: 500;
+  font-size: 30px;
+  color: black;
+  position: relative;
+  width: fit-content;
+}
+.basket-page__count {
+  position: absolute;
+  min-width: 20px;
+  height: 20px;
+  border-radius: 25%;
+  right: -20px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  box-sizing: content-box;
+  padding: 2px 5px;
+  font-weight: 300;
+  font-size: 20px;
+}
+.basket-page__container {
+}

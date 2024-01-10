@@ -167,7 +167,7 @@ button {
   transition: all 0.3s ease-in-out;
 }
 .shop__item-btn:hover {
-  background: #436f9c;
+  background: #3925ed;
 }
 .btn-item {
   display: flex;
