@@ -25,7 +25,35 @@
         <section class="shop">
           <div class="container">
             <div class="shop__wrapper">
-              <div class="shop__inner elements"></div>
+              <div class="shop__item">
+                <div class="shop__image">
+                  <svg
+                    class="shop__like"
+                    width="800px"
+                    height="800px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2 9.1371C2 14 6.01943 16.5914 8.96173 18.9109C10 19.7294 11 20.5 12 20.5C13 20.5 14 19.7294 15.0383 18.9109C17.9806 16.5914 22 14 22 9.1371C22 4.27416 16.4998 0.825464 12 5.50063C7.50016 0.825464 2 4.27416 2 9.1371Z"
+                    />
+                  </svg>
+                  <img
+                    src="https://img.joomcdn.net/d174d7f8ea3489ffdf8ad1675ec62461f24885fd_original.jpeg"
+                    alt="картинка"
+                  />
+                </div>
+                <div class="shop__text">
+                  <span class="shop__price">1500 ₽</span>
+                  <h2 class="shop__name">
+                    наручные швейцарские часы Auguste Reymond AR16M6.6.670.6
+                  </h2>
+                </div>
+                <button class="shop__btn" type="button">
+                  <!-- <span>в корзину</span> -->
+                </button>
+              </div>
             </div>
           </div>
         </section>
@@ -41,23 +69,7 @@
         </div>
       </footer>
     </div>
-    <template class="template">
-      <div class="shop__item">
-        <a href="">
-          <div class="shop__item-img">
-            <img class="shop__image" src="" alt="картинка" />
-          </div>
-          <div class="shop__item-price"></div>
-          <div class="shop__item-name"></div>
-        </a>
-        <button class="shop__item-btn" type="button">
-          <div class="btn-item">
-            <img src="./icons/basc.png" alt="корзина" />
-            В корзину
-          </div>
-        </button>
-      </div>
-    </template>
+
     <script src="./products/products.js"></script>
     <script src="./products/init.js"></script>
     <script src="./js/index.js"></script>

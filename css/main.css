@@ -59,7 +59,8 @@ button {
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
-  background: #1e90ff;
+  background: #00894e;
+  background-image: linear-gradient(to bottom, #00b35f, #00894e);
 }
 .header__wrapper {
   max-width: 1200px;
@@ -105,86 +106,114 @@ button {
 /*promo*/
 .shop {
   width: 100%;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 .shop__wrapper {
-  width: 100%;
-  margin: 50px auto;
   display: flex;
-  justify-content: center;
-}
-.shop__inner {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(auto, 250px));
-  gap: 66.6px;
-  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .shop__item {
+  width: 350px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 10px;
-  border-radius: 8px 8px 0 0;
-}
-.shop__item a {
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  align-items: center;
   padding: 1em;
   box-sizing: border-box;
-  border-radius: 5px;
+  gap: 20px;
+  box-shadow: 0px 1px 34px 0px #c0c0c040;
 }
-.shop__item-img {
-  width: 100%;
-  height: 250px;
+.shop__image {
+  width: 300px;
+  height: 300px;
+  position: relative;
 }
-
-.shop__item-img img {
+.shop__like {
+  fill: #9a9a9a;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.shop__like:hover {
+  opacity: 0.5;
+}
+.shop__like.active {
+  fill: red;
+}
+.shop__image img {
   display: block;
   width: 100%;
   height: 100%;
-  border-radius: inherit;
 }
-.shop__item-price {
-  font-size: 30px;
-  color: #000000;
+.shop__text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
 }
-.shop__item-name {
-  font-size: 14px;
-  color: #000000;
+.shop__price {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28.8px;
+  color: 010101;
+}
+.shop__name {
+  display: block;
+  color: 010101;
+  max-width: 300px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  -webkit-line-clamp: 4; /* количество строк */
+  -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
 }
-.shop__item-btn {
+.shop__btn {
   width: 100%;
   height: 50px;
-  border-radius: 5px;
-  background: #1e90ff;
-  -webkit-box-shadow: inset 0px 1px 10px 0px rgba(255, 255, 255, 0.4),
-    0px 3px 3px 0px rgba(0, 0, 0, 0.4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border-radius: 8px;
+  background: #00894e;
+  background-image: linear-gradient(to bottom, #00b35f, #00894e);
+  position: relative;
   transition: all 0.3s ease-in-out;
 }
-.shop__item-btn:hover {
-  background: #3925ed;
-}
-.btn-item {
-  display: flex;
-  align-items: end;
-  gap: 10px;
+.shop__btn::before {
+  position: absolute;
+  content: "в корзину";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
   font-size: 16px;
-  font-weight: bolder;
+  line-height: 20px;
 }
-.btn-item img {
-  width: 24px;
-  height: 24px;
+.shop__btn:hover,
+.shop__btn.active {
+  background: transparent;
+  color: #00894e;
+  border: 1px solid #00894e;
+}
+.shop__btn:hover::before {
+  color: #00894e;
+}
+.shop__btn.active::before {
+  content: "в корзине";
+  color: #00894e;
 }
 /*footer*/
 .footer {
   flex: 0 0 auto;
-  background: #1e90ff;
+  background: #00894e;
+  background-image: linear-gradient(to bottom, #00b35f, #00894e);
 }
 .footer__wrapper {
   margin: 30px auto;
